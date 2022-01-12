@@ -43,6 +43,21 @@ $(() => {
     const color = rgb2hex($(e.currentTarget).css("background-color"));
     updateColor(color);
   });
+
+  $("#webSocketServerUrlCopy").on("click", () => {
+    const url = location.href;
+    const webSocketServerUrl = url.replace("http", "ws");
+
+    $("body").append(`<textarea id="copyTxtArea"></textarea>`);
+
+    const $copyTxtArea = $("#copyTxtArea");
+
+    $copyTxtArea.text(webSocketServerUrl);
+    $copyTxtArea.select();
+    document.execCommand("copy");
+    $copyTxtArea.remove();
+    alert(`copied ${webSocketServerUrl}`);
+  });
 });
 
 /** ----------------------------------------
