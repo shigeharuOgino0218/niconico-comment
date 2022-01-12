@@ -4,11 +4,12 @@
   font-size: 32px;
   font-weight: 800;
   color: #fff;
+  line-height: 1;
   -webkit-text-stroke: 1px #666;
   position: fixed;
   right: 0;
   top: 0;
-  transform: translate(100%, -50%);
+  transform: translate(100%, 0);
   z-index: 999999;
   animation: 20s niconicoComment linear;
 }
@@ -18,6 +19,6 @@
     right: 0;
   }
   100% {
-    right: 200%;
+    right: 200%; /* 文字数の考慮. */
   }
 }
