@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="./dist/output.css" rel="stylesheet">
+  <script src="./lib.js"></script>
+  <script src="./main.js"></script>
+</head>
+
+<body class="font-body">
+  <div class="container mx-auto px-6 py-10 max-w-md">
+    <input id="comment" type="text" placeholder="コメント"
+      class="block w-full border rounded p-4 outline-none focus:border-teal-300">
+    <input type="button" id="submit" value="コメントする"
+      class="w-full bg-teal-400 rounded font-bold text-white px-8 py-4 mt-2">
+    <p class="font-bold text-sm text-gray-400 mt-8 mb-2">ボタンでコメントする</p>
+    <div class="flex flex-wrap">
+      <button class="comment-btn | border rounded px-3 py-2 mr-2 mb-2 active:bg-gray-100">www</button>
+      <button class="comment-btn | border rounded px-3 py-2 mr-2 mb-2 active:bg-gray-100">wwwwww</button>
+      <button class="comment-btn | border rounded px-3 py-2 mr-2 mb-2 active:bg-gray-100">wwwwwwwwwwww</button>
+      <button class="comment-btn | border rounded px-3 py-2 mr-2 mb-2 active:bg-gray-100">草</button>
+      <button class="comment-btn | border rounded px-3 py-2 mr-2 mb-2 active:bg-gray-100">!?</button>
+      <button class="comment-btn | border rounded px-3 py-2 mr-2 mb-2 active:bg-gray-100">!</button>
+      <button class="comment-btn | border rounded px-3 py-2 mr-2 mb-2 active:bg-gray-100">?</button>
+      <button class="comment-btn | border rounded px-3 py-2 mr-2 mb-2 active:bg-gray-100">うぽつ</button>
+      <button class="comment-btn | border rounded px-3 py-2 mr-2 mb-2 active:bg-gray-100">かわいい</button>
+      <button class="comment-btn | border rounded px-3 py-2 mr-2 mb-2 active:bg-gray-100">ここすき</button>
+      <button class="comment-btn | border rounded px-3 py-2 mr-2 mb-2 active:bg-gray-100">88888888</button>
+    </div>
+    <p class="font-bold text-sm text-gray-400 mt-8 mb-2">コメントの色</p>
+    <div class="flex items-center">
+      <div class="w-10 h-10 bg-white rounded-full border border-gray-300" id="colorPreview">
+        <input type="color" class="opacity-0 w-full h-full" id="color" value="#ffffff">
+      </div>
+      <p id="colorName" class="ml-2 text-gray-400">#FFFFFF</p>
+    </div>
+    <p class="font-bold text-xs text-gray-400 mt-4 mb-2">プリセット</p>
+    <div class="flex flex-wrap">
+      <button class="color-btn | block w-7 h-7 bg-white rounded-full border border-gray-300 mr-2 mb-2" style="background-color:#ffffff"></button>
+      <button class="color-btn | block w-7 h-7 bg-white rounded-full border border-gray-300 mr-2 mb-2" style="background-color:#ff0000"></button>
+      <button class="color-btn | block w-7 h-7 bg-white rounded-full border border-gray-300 mr-2 mb-2" style="background-color:#ff8080"></button>
+      <button class="color-btn | block w-7 h-7 bg-white rounded-full border border-gray-300 mr-2 mb-2" style="background-color:#ffc000"></button>
+      <button class="color-btn | block w-7 h-7 bg-white rounded-full border border-gray-300 mr-2 mb-2" style="background-color:#ffff00"></button>
+      <button class="color-btn | block w-7 h-7 bg-white rounded-full border border-gray-300 mr-2 mb-2" style="background-color:#00ff00"></button>
+      <button class="color-btn | block w-7 h-7 bg-white rounded-full border border-gray-300 mr-2 mb-2" style="background-color:#00ffff"></button>
+      <button class="color-btn | block w-7 h-7 bg-white rounded-full border border-gray-300 mr-2 mb-2" style="background-color:#0000ff"></button>
+      <button class="color-btn | block w-7 h-7 bg-white rounded-full border border-gray-300 mr-2 mb-2" style="background-color:#c000ff"></button>
+    </div>
+
+    
+    <div id="history" class="mt-8"></div>
+  </div>
+</body>
+
+</html>

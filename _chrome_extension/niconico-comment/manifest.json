@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "niconico comment",
+  "version": "1.0",
+  "description": "niconico comment on website",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "icon19.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "run_at": "document_idle",
+      "js": ["lib.js", "content_script.js"],
+      "css": ["content_script.css"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}

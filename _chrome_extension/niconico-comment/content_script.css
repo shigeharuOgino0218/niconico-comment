@@ -1,0 +1,23 @@
+.niconicoComment {
+  width: 100%;
+  font-family: "M PLUS 1p", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: #fff;
+  -webkit-text-stroke: 1px #666;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translate(100%, -50%);
+  z-index: 999999;
+  animation: 20s niconicoComment linear;
+}
+
+@keyframes niconicoComment {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 200%;
+  }
+}
