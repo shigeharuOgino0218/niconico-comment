@@ -60,7 +60,6 @@ niconicoComment.methods.createCommentLane = () => {
   }
 
   self.lanes = lanes;
-  z;
 };
 
 $(() => {
